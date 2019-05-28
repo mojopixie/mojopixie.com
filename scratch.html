@@ -1,0 +1,287 @@
+
+
+/* ===================================================================
+ * # footer
+ *
+ * ------------------------------------------------------------------- */
+ 
+    .hm-foot-icon {}
+
+     .smb p {
+        font-family: 'Dr Sugiyama', cursive;
+        font-size: 22px;
+        color: #BCCFD1;
+        margin-right: 15px;
+    }
+    
+        
+    #footer-copyright {
+        background: #111111;
+    }
+    
+    
+    .hm-foot-icon ul li {
+        float: left;
+    }
+    
+    .hm-foot-icon ul li>a {
+        color: #7aa0a3;
+        margin-right: 18px;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }
+    
+    .hm-foot-icon ul li>a:hover {
+        color: #bccfd1;
+    }
+    /*hm-foot-icon*/
+    
+    .hm-footer-copyright p {
+        color: #888ea5;
+        text-transform: capitalize;
+        padding: 38px 0;
+    }
+    
+    .hm-footer-copyright p a {
+        color: #7aa0a3;
+    }
+
+
+
+
+
+
+    /*===============================
+    Scroll Top
+===============================*/
+    
+    #scroll-Top .return-to-top {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        display: none;
+        width: 40px;
+        line-height: 40px;
+        height: 40px;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+        color: #fff;
+        background: #59898d;
+        border: 1px solid #59898d;
+        border-radius: 50%;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        z-index: 2;
+    }
+    
+    #scroll-Top .return-to-top:hover {
+        background: #fff;
+        color: #59898d;
+        border: 1px solid #59898d;
+    }
+    
+    #scroll-Top .return-to-top i {
+        position: relative;
+        bottom: 0;
+    }
+    
+    #scroll-Top .return-to-top i {
+        position: relative;
+        animation-name: example;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+    }
+    
+    @keyframes example {
+        0% {
+            bottom: 0px;
+        }
+        100% {
+            bottom: 7px;
+        }
+    }
+    /* ===================================================================
+ * # preloader - (_preloader-dots.scss)
+ *
+ * ------------------------------------------------------------------- */
+    
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #151515;
+        z-index: 800;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .no-js #preloader,
+    .oldie #preloader {
+        display: none;
+    }
+    
+    #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 6px;
+        height: 6px;
+        padding: 0;
+        display: inline-block;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        -ms-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+    }
+    
+    #loader>div {
+        content: "";
+        background: #FFFFFF;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+    }
+    
+    #loader>div:nth-of-type(1) {
+        left: 15px;
+    }
+    
+    #loader>div:nth-of-type(3) {
+        left: -15px;
+    }
+    /* dots jump */
+    
+    .dots-jump>div {
+        -webkit-animation: dots-jump 1.2s infinite ease;
+        animation: dots-jump 1.2s infinite ease;
+        animation-delay: 0.2s;
+    }
+    
+    .dots-jump>div:nth-of-type(1) {
+        animation-delay: 0.4s;
+    }
+    
+    .dots-jump>div:nth-of-type(3) {
+        animation-delay: 0s;
+    }
+    
+    @-webkit-keyframes dots-jump {
+        0% {
+            top: 0;
+        }
+        40% {
+            top: -6px;
+        }
+        80% {
+            top: 0;
+        }
+    }
+    
+    @keyframes dots-jump {
+        0% {
+            top: 0;
+        }
+        40% {
+            top: -6px;
+        }
+        80% {
+            top: 0;
+        }
+    }
+    /* dots fade */
+    
+    .dots-fade>div {
+        -webkit-animation: dots-fade 1.6s infinite ease;
+        animation: dots-fade 1.6s infinite ease;
+        animation-delay: 0.4s;
+    }
+    
+    .dots-fade>div:nth-of-type(1) {
+        animation-delay: 0.8s;
+    }
+    
+    .dots-fade>div:nth-of-type(3) {
+        animation-delay: 0s;
+    }
+    
+    @-webkit-keyframes dots-fade {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 0.2;
+        }
+        80% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes dots-fade {
+        0% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 0.2;
+        }
+        80% {
+            opacity: 1;
+        }
+    }
+    /* dots pulse */
+    
+    .dots-pulse>div {
+        -webkit-animation: dots-pulse 1.2s infinite ease;
+        animation: dots-pulse 1.2s infinite ease;
+        animation-delay: 0.2s;
+    }
+    
+    .dots-pulse>div:nth-of-type(1) {
+        animation-delay: 0.4s;
+    }
+    
+    .dots-pulse>div:nth-of-type(3) {
+        animation-delay: 0s;
+    }
+    
+    @-webkit-keyframes dots-pulse {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        40% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.3);
+        }
+        80% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes dots-pulse {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        40% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.3);
+        }
+        80% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }

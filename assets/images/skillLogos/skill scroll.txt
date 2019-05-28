@@ -1,0 +1,55 @@
+<div class="clients">
+	<div class="row item_fade_in" style="opacity: 1; right: 0px;">
+		<div class="carrousel-container">
+			<div id="left_scroll">
+				<a href="javascript:slide(&quot;left&quot;);"></a>
+			</div>
+			<div id="carousel_inner">
+				<ul class="clearfix" id="carousel_ul" style="left: -259.897px;">
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195649/bootstrap.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195645/open-edx.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195650/amazon-web-services.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195643/wordpress-1.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195644/woocommerce.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195644/ruby-on-rails.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195650/angularjs.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195647/ionic.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195649/cordova.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195648/github.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195649/apache.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195645/php.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195644/python.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195648/django.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195648/excel.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195644/vba.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195648/dot-net.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195647/ios.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195646/objective-c.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195650/android.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195645/postgresql.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195646/mysql.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195646/mssql-server.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195644/sqlite.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195647/mongodb.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195648/hadoop.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195643/xml.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195647/json.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195648/git.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195650/ansible.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195649/chef.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195645/puppet.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195647/jenkins.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195644/qualcomm-snapdragon.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195648/d3.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195643/lamp-logo.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195647/linux.png" alt=""></span></li>
+					<li style="opacity: 1; margin-top: 0px;"><span><img src="https://cdn.lawrencemcdaniel.com/wp-content/uploads/2014/09/22195648/html5-css-js.png" alt=""></span></li>
+				</ul>
+			</div>
+			<div id="right_scroll">
+				<a href="javascript:slide(&quot;right&quot;);"></a>
+			</div>
+		<input type="hidden" id="hidden_auto_slide_seconds" value="5000">
+		</div>
+	</div>
+</div>
