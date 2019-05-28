@@ -1,0 +1,85 @@
+/*-------------------------------------
+        5.  Education
+--------------------------------------*/
+
+
+/* .education {
+    background: #f9fbfd;
+    padding-top: 50px;
+} */
+
+.education {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    padding: 50px 0 100px;
+    background: url(../images/grayT.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 20;
+}
+
+.education-horizontal-timeline {
+    padding: 50px 0;
+}
+
+
+/* .education-horizontal-timeline {
+    padding: 50px 0;
+} */
+
+
+/*.education-horizontal-timeline*/
+
+.education-horizontal-timeline .col-sm-4 {
+    padding: 0 2px;
+}
+
+.single-horizontal-timeline .experience-time h3 {
+    text-transform: capitalize;
+}
+
+.single-horizontal-timeline .experience-time h3 span,
+.single-horizontal-timeline .experience-time h4 span {
+    text-transform: lowercase;
+}
+
+.single-horizontal-timeline .timeline-content h5 {
+    margin: 15px 0;
+}
+
+.single-horizontal-timeline p {
+    color: #141723;
+    max-width: 335px;
+}
+
+
+/*.timeline-horizontal-border*/
+
+.timeline-horizontal-border {
+    display: flex;
+    align-items: center;
+    padding: 26px 0 30px;
+}
+
+.timeline-horizontal-border i {
+    font-size: 10px;
+    color: #82adb0;
+    margin-right: 5px;
+}
+
+span.single-timeline-horizontal {
+    display: inline-block;
+    background: #476d70;
+    height: 2px;
+    width: 380px;
+}
+
+span.single-timeline-horizontal.spacial-horizontal-line {
+    width: 88px;
+    /* width: 350px; */
+}
+
+
+/*.timeline-horizontal-border*/
+
+
+/*.education-horizontal-timeline*/
