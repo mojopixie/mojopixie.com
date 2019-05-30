@@ -293,7 +293,7 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: url(../images/bgs/bg1home.jpg)no-repeat;
+    background: url(assets/images/bgs/bg1home.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -481,7 +481,7 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
 .education {
     box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
     padding: 50px 0 100px;
-    background: url(../images/bgs/bg2edu.jpg)no-repeat;
+    background: url(assets/images/bgs/bg2edu.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 20;
@@ -613,7 +613,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 
-/* background: url(../images/grayTexture.jpg)no-repeat;
+/* background: url(assets/images/grayTexture.jpg)no-repeat;
     background-size: cover;
     background-position: center; */
 
@@ -623,7 +623,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 
 
 /* padding: 50px 0 100px;
-    background: url(../images/grayT.jpg)no-repeat;
+    background: url(assets/images/grayT.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 20;
@@ -737,7 +737,7 @@ h4 {
 .portfolio {
     padding: 50px 0 100px;
     box-shadow: 0 3px 15px rgba(122, 107, 107, 0.2);
-    background: url(../images/bgs/bg3portfolio.jpg)no-repeat;
+    background: url(assets/images/bgs/bg3portfolio.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -753,7 +753,7 @@ h4 {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: url(../images/about/banners/welcome-banner1.jpg)no-repeat;
+    background: url(assets/images/about/banners/welcome-banner1.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     height: 890px;
@@ -1026,7 +1026,7 @@ h4 {
 }
 
 #footer-copyright {
-    background: url(../images/about/banners/welcome-banner3.jpg)no-repeat;
+    background: url(../images/bgs/bg4Footer.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
