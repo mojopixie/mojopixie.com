@@ -4,9 +4,12 @@ Susan M Bernard
 susanmbernard@gmail.com
  
 
-Skills 	Agile Software Development, Android Software Development, Bitbucket, Bootstrap, CSS3, Git/Github, HTML5, Java, Javafx, Javascript, JSON, Markdown, Microsoft Office, Mysql, Node.Js, PHP5, Python, SDLC, Sqlite, UML, XML	
+=====     Skills     =====   	
+Agile Software Development, Android Software Development, Bitbucket, Bootstrap, CSS3, Git/Github, HTML5, 
+Java, Javafx, Javascript, JSON, Markdown, Microsoft Office, MySQL, Node.js, PhP5, Python, SDLC, SQLite, UML, XML	
 
-Education 	BOSTON UNIVERSITY, 2018
+=====     Education     =====   	
+BOSTON UNIVERSITY, 2018
 Master of Science
 Software Development 	
 GPA: 3.57
@@ -19,28 +22,30 @@ GPA: 3.94
 UNIVERSITY OF WEST GEORGIA, Honors College, 2006
 Bachelor of Arts
 Psychology 	
-Honors : Cum Laude
-GPA: 3.70
-	
+Honors : Cum Laude, GPA: 3.70
 
-
-Experience 	Media Specialist Paraprofessional
+=====     Experience     =====     	
+Media Specialist Paraprofessional
 Brighten Academy Charter School, Douglasville, GA
-Performed computer and network administration, security, and troubleshooting. Provided technology-related education and training of staff and students. Coordinated & incorporated library and technology into lessons that followed K-8 CORE standards.	
+Performed computer and network administration, security, and troubleshooting. Provided technology-related education and training of staff and students. 
+Coordinated & incorporated library and technology into lessons that followed K-8 CORE standards.	
 
 Internet Assessor
 Lionbridge Technologies, Inc, Remote, GA
-Evaluate web search results, determine, rate, and communicate appropriateness to search. Interpret guidelines to assist rating resolution process. Effective verbal and written communication skills	
+Evaluate web search results, determine, rate, and communicate appropriateness to search. Interpret guidelines to assist rating resolution process. 
+Effective verbal and written communication skills	
 
 Researcher/Transcriptionist
 UWG/GA Tech, Carrollton, GA
-Performed research, data compilation, proper APA formatting, and transcription services for Dr. Kareen Malone, at UWG/Georgia Tech, under a National Science Foundation (NSF) grant.	
+Performed research, data compilation, proper APA formatting, and transcription services for Dr. Kareen Malone, at UWG/Georgia Tech, 
+under a National Science Foundation (NSF) grant.	
 
 Hospital Corpsman
 United States Navy, Charleston, SC
-Served in a variety of roles, including Neuro-Psychiatric technician, Active duty and Family Medicine clinic administrator, and interim Department Head Secretary of Minor Surgery Clinic. 
-DD214 available upon request.	
+Served in a variety of roles, including Neuro-Psychiatric technician, Active duty and Family Medicine clinic administrator, 
+and interim Department Head Secretary of Minor Surgery Clinic. 
+
+=====     DD214 available upon request.	
 
 
-
-References 	References available upon request.
+=====     References available upon request.		
