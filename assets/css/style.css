@@ -35,7 +35,6 @@ font-family: 'Dr Sugiyama', cursive;
     font-size: 24px;
     font-weight: 700;
     color: #282F47;
-    text-transform: uppercase;
     padding-bottom: 25px;
     /* border-bottom: 1px solid #000; */
 }
@@ -106,8 +105,6 @@ img {
 }
 
 ul {
-    padding: 0;
-    margin: 0 auto;
     list-style: none;
 }
 
@@ -200,7 +197,6 @@ nav.navbar.bootsnav {
 nav.navbar.bootsnav ul.nav>li>a {
     font-size: 16px;
     font-weight: 400;
-    text-transform: uppercase;
     -webkit-transition: 0.3s linear;
     -moz-transition: 0.3s linear;
     -ms-transition: 0.3s linear;
@@ -297,11 +293,10 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
     align-items: center;
     justify-content: center;
     position: relative;
-    /* ../images/about/welcome-banner2.jpg */
-    background: url(../images/grayT3.jpg)no-repeat;
+    background: url(../images/bgs/bg1home.jpg)no-repeat;
     background-size: cover;
     background-position: center;
-    height: 890px;
+    height: 800px;
 }
 
 .welcome-hero:before {
@@ -320,7 +315,6 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
     color: #fff;
     font-size: 54px;
     font-weight: 700;
-    text-transform: uppercase;
     line-height: 1.5;
 }
 
@@ -332,7 +326,6 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
     color: #eef3f3;
     font-size: 20px;
     font-weight: 500;
-    text-transform: uppercase;
     margin: 30px 0 60px;
     letter-spacing: 1px;
 }
@@ -342,7 +335,6 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
     height: 60px;
     line-height: 60px;
     border-radius: 3px;
-    text-transform: capitalize;
     color: #fff;
     background: #59898d;
     border: 1px solid #7aa0a3;
@@ -384,7 +376,6 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
 .single-about-txt h3 {
     font-size: 18px;
     color: #3c4258;
-    text-transform: initial;
     line-height: 1.8;
 }
 
@@ -402,7 +393,6 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
 .single-about-add-info h3 {
     color: #282F47;
     font-size: 16px;
-    text-transform: capitalize;
 }
 
 .single-about-add-info p {
@@ -428,9 +418,8 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
     content: " ";
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: rgba(31, 44, 108, .3); */
+    max-width: 400px;
+    height: auto;
 }
 
 .single-about-img img {
@@ -454,8 +443,8 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
 /*.ab-list-icon */
 
 .about-list-icon ul li a {
-    width: 100px;
-    max-height: 24px;
+    width: auto;
+    max-height: auto;
 }
 
 
@@ -492,7 +481,7 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
 .education {
     box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
     padding: 50px 0 100px;
-    background: url(../images/grayT.jpg)no-repeat;
+    background: url(../images/bgs/bg2edu.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     opacity: 20;
@@ -517,7 +506,6 @@ h4 {
     font-weight: 600;
     color: #acc4c6;
     margin-top: 14px;
-    text-transform: uppercase;
 }
 
 
@@ -535,17 +523,11 @@ background: #eef3f3; */
     padding: 0 2px;
 }
 
-.single-horizontal-timeline .experience-time h3 {
-    text-transform: capitalize;
-}
+.single-horizontal-timeline .experience-time h3 {}
 
-.single-horizontal-timeline .experience-time h3 span {
-    text-transform: lowercase;
-}
+.single-horizontal-timeline .experience-time h3 span {}
 
-.single-horizontal-timeline .experience-time h4 span {
-    text-transform: lowercase;
-}
+.single-horizontal-timeline .experience-time h4 span {}
 
 .single-horizontal-timeline .timeline-content h5 {
     margin: 15px 0;
@@ -674,7 +656,6 @@ h4 {
     font-weight: 600;
     color: #acc4c6;
     margin-top: 14px;
-    text-transform: uppercase;
 }
 
 
@@ -715,7 +696,6 @@ h4 {
     color: #acc4c6;
     font-size: 20px;
     font-weight: 600;
-    text-transform: capitalize;
 }
 
 .timeline-content h5 {
@@ -756,24 +736,15 @@ h4 {
 
 .portfolio {
     padding: 50px 0 100px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
-    background: url(../images/grayTexture.jpg)no-repeat;
+    box-shadow: 0 3px 15px rgba(122, 107, 107, 0.2);
+    background: url(../images/bgs/bg3portfolio.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
     justify-content: center;
     position: relative;
-}
-
-
-/* 
-    border: 1px solid #e5ebf2;
-    background: #dde7e8;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-} */
+}
 
 
 /* padding: 50px 0 100px;
@@ -793,7 +764,6 @@ h4 {
     color: #9bb8ba;
     font-size: 24px;
     font-weight: 600;
-    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 150px;
 }
@@ -852,7 +822,6 @@ h4 {
     background: rgba(89, 137, 141, .8);
     display: flex;
     align-items: center;
-    text-transform: uppercase;
     justify-content: center;
     flex-direction: row;
     -webkit-transform: scale(0);
@@ -904,13 +873,28 @@ h4 {
     color: #7aa0a3;
     font-size: 24px;
     font-weight: 600;
-    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 50px;
 }
 
+.contact h3 {
+    margin: 0px 0px 10px 5px;
+    color: #6a708e;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact p {
+    margin: 0px 0px 10px 5px;
+    line-height: 1.8;
+    color: #E0E5E5;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .single-contact-box {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .contact-form .form-group {
@@ -938,7 +922,6 @@ h4 {
     align-items: center;
     justify-content: center;
     height: 50px;
-    text-transform: capitalize;
     margin-top: 3px;
     background: #59898d;
     border: 1px solid #59898d;
@@ -985,7 +968,6 @@ h4 {
 
 .contact-add-head p {
     font-size: 16px;
-    text-transform: capitalize;
     color: #eef3f3;
     font-weight: 300;
     margin-top: 6px;
@@ -1022,8 +1004,15 @@ h4 {
 
 /* ===================================================================
     * 10. Footer
-    *
+    *242626
     * ------------------------------------------------------------------- */
+
+#footer {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
+    background: #0E1616;
+    align-items: center;
+    padding: 0px;
+}
 
 
 /*hm-foot-icon*/
@@ -1034,7 +1023,6 @@ h4 {
     font-family: 'Dr Sugiyama', cursive;
     font-size: 22px;
     color: #BCCFD1;
-    margin-right: 15px;
 }
 
 #footer-copyright {
@@ -1047,11 +1035,10 @@ h4 {
     position: relative;
 }
 
-
-}
 .hm-foot-icon ul li {
     float: left;
 }
+
 .hm-foot-icon ul li>a {
     color: #7aa0a3;
     margin-right: 18px;
@@ -1061,21 +1048,25 @@ h4 {
     -o-transition: .3s;
     transition: .3s;
 }
+
 .hm-foot-icon ul li>a:hover {
     color: #bccfd1;
 }
+
 .hm-footer-copyright p {
     color: #BCCFD1;
-    text-transform: capitalize;
     padding: 38px 0;
 }
+
 .hm-footer-copyright p a {
     color: #7aa0a3;
 }
 
+
 /*-------------------------------------
 11.  Scroll Top
 --------------------------------------*/
+
 #scroll-Top .return-to-top {
     position: fixed;
     right: 30px;
@@ -1098,15 +1089,18 @@ h4 {
     transition: .5s;
     z-index: 2;
 }
+
 #scroll-Top .return-to-top:hover {
     background: #fff;
     color: #59898d;
     border: 1px solid #59898d;
 }
+
 #scroll-Top .return-to-top i {
     position: relative;
     bottom: 0;
 }
+
 #scroll-Top .return-to-top i {
     position: relative;
     animation-name: example;
@@ -1114,11 +1108,11 @@ h4 {
     animation-iteration-count: infinite;
     animation-duration: 1s;
 }
+
 @keyframes example {
     0% {
         bottom: 0px;
     }
-    
     100% {
         bottom: 7px;
     }
