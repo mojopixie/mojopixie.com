@@ -83,6 +83,26 @@ $(document).ready(function() {
         autoplay: true,
         autoplayTimeout: 1000,
         autoplayHoverPause: true
+
+        //     responsive:{
+        //         0:{
+        //             items:2
+        //         },
+        //         415:{
+        //             items:2
+        //         },
+        //         600:{
+        //             items:4
+
+        //         },
+        //         1199:{
+        //             items:4
+        //         },
+        //         1200:{
+        //             items:6
+        //         }
+        //     }
+        // });
     });
 
     $('.play').on('click', function() {
