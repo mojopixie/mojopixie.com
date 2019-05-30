@@ -705,56 +705,73 @@
                             <p>* denotes required field</p>
 
                             <div class="contact-form">
-                                <form>
+                                <form role="form" id="contactForm" data-toggle="validate" class="shake">
+
+
                                     <div class="row">
+
                                         <div class="col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="name" placeholder="Name*" name="Name">
+                                                <input type="text" class="form-control" id="name" placeholder="Enter Name *" name="Name" required data-error="NEW ERROR MESSAGE">
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                             <!--/.form-group-->
                                         </div>
                                         <!--/.col-->
+
                                         <div class="col-sm-6 col-xs-12">
                                             <div class="form-group">
-                                                <input type="email" class="form-control" id="email" placeholder="Email*" name="Email">
+                                                <input type="email" class="form-control" id="email" placeholder="Enter Email *" name="Email" required>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                             <!--/.form-group-->
                                         </div>
                                         <!--/.col-->
                                     </div>
                                     <!--/.row-->
+
+                                    <!-- COMMENTED OUT FOR NOW UNTIL CHECK JS AND PHP FOR SUBJECT-->
+                                    <!-- <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="subject" placeholder="Enter Subject" name="Subject" required>
+                                                <div class="help-block with-errors"></div>
+                                            </div>                                            
+                                        </div>                                      
+                                    </div> -->
+                                    <!--/.form-group-->
+                                    <!--/.col-->
+                                    <!--/.row-->
+
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" id="subject" placeholder="Subject" name="Subject">
+                                                <textarea id="message" class="form-control" rows="8" placeholder="Enter Message *" required></textarea>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                             <!--/.form-group-->
                                         </div>
                                         <!--/.col-->
                                     </div>
                                     <!--/.row-->
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <textarea class="form-control" rows="8" id="comment" placeholder="Message"></textarea>
-                                            </div>
-                                            <!--/.form-group-->
-                                        </div>
-                                        <!--/.col-->
-                                    </div>
-                                    <!--/.row-->
+
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="single-contact-btn">
-                                                <a class="contact-btn" href="#" role="button">Submit Message</a>
+                                                <button type="submit" id="form-submit">Submit Message</button>
+                                                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                                <div class="clearfix"></div>
+                                                <!-- <a class="contact-btn" href="#" role="button">Submit Message</a> -->
                                             </div>
                                             <!--/.single-single-contact-btn-->
                                         </div>
                                         <!--/.col-->
                                     </div>
                                     <!--/.row-->
+
                                 </form>
                                 <!--/form-->
+
                             </div>
                             <!--/.contact-form-->
                         </div>
@@ -889,7 +906,12 @@
     <!--Custom JS-->
     <script src="assets/js/custom.js"></script>
 
-</body>
 
+    <!--Contact Form JS-->
+    <script type="text/javascript" src="js/JScontact/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/JScontact/validate.min.js"></script>
+    <script type="text/javascript" src="js/JScontact/form-scripts.js"></script>
+
+</body>
 
 </html>
