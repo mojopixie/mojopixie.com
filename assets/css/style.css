@@ -293,7 +293,7 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: url(assets/images/bgs/bg1home.jpg)no-repeat;
+    background: url(../images/bgs/bg1home.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     height: 800px;
