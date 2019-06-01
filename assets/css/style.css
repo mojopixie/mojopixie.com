@@ -436,6 +436,14 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
     box-shadow: 0 3px 15px rgba(0, 0, 0, .2);
 }
 
+.about h2 {
+    color: #282F47;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 15px;
+}
+
 .about-content {
     padding-top: 100px;
 }
@@ -557,6 +565,14 @@ nav.navbar.bootsnav .navbar-toggle i:focus {
     opacity: 20;
 }
 
+.education h2 {
+    color: #282F47;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 15px;
+}
+
 
 /*edu-time*/
 
@@ -654,6 +670,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     background: #b0b8b9
 }
 
+.skills h2 {
+    color: #282F47;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 30px;
+}
+
 .skill-area {
     display: flex;
     align-items: center;
@@ -699,9 +723,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     opacity: 20;
 }
 
-.education h2 {
+*/
+
+.experience h2 {
     color: #282F47;
-} */
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 15px;
+}
 
 .single-timeline-box {
     margin-bottom: 75px;
@@ -805,7 +835,7 @@ h4 {
 --------------------------------------*/
 
 .portfolio {
-    padding: 50px 0 100px;
+    padding: 50px;
     box-shadow: 0 3px 15px rgba(122, 107, 107, 0.2);
     background: url(../images/bgs/bg3portfolio.jpg)no-repeat;
     background-size: cover;
@@ -835,7 +865,7 @@ h4 {
     font-size: 24px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 150px;
+    padding-bottom: 35px;
 }
 
 */ .portfolio-content {
@@ -944,7 +974,7 @@ h4 {
     font-size: 24px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
 }
 
 .contact h3 {
