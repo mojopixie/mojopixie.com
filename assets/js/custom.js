@@ -8,14 +8,30 @@ $(document).ready(function() {
 ==================================== */
 
 
-
     /*=========== TABLE OF CONTENTS ===========
+    ###Preloader
     1. Scroll To Top 
     2. Smooth Scroll spy
     3. Progress-bar
     4. owl carousel
     5. welcome animation support
     ======================================*/
+
+    /* ###Preloader
+     * -------------------------------------------------- */
+    $(document).ready(function() {
+        //Preloader
+        $(window).on("load", function() {
+            preloaderFadeOutTime = 500
+
+            function hidePreloader() {
+                var preloader = $('.spinner-wrapper');
+                preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+        });
+    });
+
 
     // 1. Scroll To Top 
     $(window).on('scroll', function() {
@@ -31,7 +47,6 @@ $(document).ready(function() {
         }, 1500);
         return false;
     });
-
 
 
     // 2. Smooth Scroll spy
@@ -104,14 +119,6 @@ $(document).ready(function() {
         //     }
         // });
     });
-
-    $('.play').on('click', function() {
-        owl.trigger('play.owl.autoplay', [1000])
-    })
-
-    $('.stop').on('click', function() {
-        owl.trigger('stop.owl.autoplay')
-    })
 
     // 5. welcome animation support
 

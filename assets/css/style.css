@@ -12,6 +12,7 @@ font-family: 'Dr Sugiyama', cursive;
 
 
 /*=========== TABLE OF CONTENTS ===========
+###PRELOADER (preloader-dots.scss)
 ##  Misc (Skills)
 1.  General css (Reset code)
 2.  Header
@@ -27,16 +28,85 @@ font-family: 'Dr Sugiyama', cursive;
 ==================================== */
 
 
-/*-------------------------------------
-##  Misc (was Skills)
---------------------------------------*/
+/* ===================================================================
+ * ###PRELOADER CSS Spinner
+ *
+ * ------------------------------------------------------------------- */
 
-.section-heading h2 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #282F47;
-    padding-bottom: 25px;
-    /* border-bottom: 1px solid #000; */
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #474D5D;
+    z-index: 999999;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    background-color: #BCCFD1;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+.lds-circle {
+    display: inline-block;
+    transform: translateZ(1px);
+}
+
+.lds-circle>div {
+    display: inline-block;
+    width: 51px;
+    height: 51px;
+    margin: 6px;
+    border-radius: 50%;
+    background: #fff;
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes lds-circle {
+    0%,
+    100% {
+        animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(1800deg);
+        animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+        transform: rotateY(3600deg);
+    }
 }
 
 
@@ -915,7 +985,7 @@ h4 {
 }
 
 
-/*--contct button--*/
+/*--contact button--*/
 
 .contact-form .single-contact-btn {
     display: flex;
@@ -956,10 +1026,10 @@ h4 {
 }
 
 
-/*--contct button--*/
+/*--contact button--*/
 
 
-/* contact-adress */
+/* contact-address */
 
 .contact-add-head h3 {
     font-size: 24px;
