@@ -1187,3 +1187,12 @@ h4 {
         bottom: 7px;
     }
 }
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#msgSubmit.h3 {
+    font-size: 16px;
+    padding: 0 0 12px 15px;
+    text-align: center;
+}
