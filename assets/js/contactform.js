@@ -35,6 +35,12 @@ jQuery(document).ready(function($) {
                         }
                         break;
 
+                        // case 'phone':
+                        //     if (!phoneExp.test(i.val())) {
+                        //         ferror = ierror = true;
+                        //     }
+                        //     break;                        
+
                     case 'email':
                         if (!emailExp.test(i.val())) {
                             ferror = ierror = true;
@@ -92,6 +98,7 @@ jQuery(document).ready(function($) {
         else var str = $(this).serialize();
         var action = $(this).attr('action');
         if (!action) {
+            // may need to be action = '../assets/php/contactform.php';
             action = 'assets/php/contactform.php';
         }
         $.ajax({
@@ -116,3 +123,35 @@ jQuery(document).ready(function($) {
     });
 
 });
+
+
+
+
+
+
+
+
+// $.ajax({
+//     type: "POST",
+//     url: action,
+//     data: str,
+//     success: function(msg) {
+//       if (msg == 'OK') {
+//         msg = 'success';
+//         $("#sendmessage").addClass("show");
+//         /* showing the message */
+//         $("#errormessage").addClass("show");
+//         $('#errormessage').html(msg);
+//         $('.contactForm').find("input, textarea").val("");
+//       } else {
+//         msg = 'failed';
+//         $("#sendmessage").removeClass("show");
+//         $("#errormessage").addClass("show");
+//         $('#errormessage').html(msg);
+//       }
+
+//     }
+//   });
+//   return false;
+// });
+// });

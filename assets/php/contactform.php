@@ -13,11 +13,13 @@
   $subject_title = "New Message Received from mojopixie.com Contact Form:";
   $name_title = "Name:";
   $email_title = "Email:";
+  // $phone_title = "Phone:";
   $message_title = "Message:";
 
   // Error messages
   $contact_error_name = "Name is too short or empty!";
   $contact_error_email = "Please enter a valid email!";
+  // $contact_error_phone = "Please enter a valid phone!";
   $contact_error_subject = "Subject is too short or empty!";
   $contact_error_message = "Message is too short or empty! Please enter something.";
 
@@ -31,6 +33,7 @@
 
     $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    // $phone = filter_var($_POST["phone"], FILTER_SANITIZE_NUMBER_INT);
     $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
@@ -38,13 +41,17 @@
       die('The contact form receiving email address is not configured!');
     }
 
-    if(strlen($name)<3){
+    if(strlen($name)<2){
       die($contact_error_name);
     }
 
     if(!$email){
       die($contact_error_email);
     }
+
+    // if(!$phone){
+    //   die($contact_error_phone);
+    // }
 
     if(strlen($subject)<3){
       die($contact_error_subject);
