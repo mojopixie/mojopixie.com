@@ -14,14 +14,14 @@
   $name_title = "Name:";
   $email_title = "Email:";
   //added phone
-  // $phone_title = "Phone:";
+  $phone_title = "Phone:";
   $message_title = "Message:";
 
   // Error messages
   $contact_error_name = "Name is too short or empty!";
   $contact_error_email = "Please enter a valid email!";
   //added phone
-  // $contact_error_phone = "Please enter a valid phone!";
+  $contact_error_phone = "Please enter a valid phone!";
   $contact_error_subject = "Subject is too short or empty!";
   $contact_error_message = "Message is too short or empty!";
 
@@ -36,7 +36,7 @@
     $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     //added phone
-    // $phone = filter_var($_POST["phone"], FILTER_SANITIZE_NUMBER_INT);
+    $phone = filter_var($_POST["phone"], FILTER_SANITIZE_NUMBER_INT);
     $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
@@ -53,9 +53,9 @@
     }
     
     //added phone
-    // if(!$phone){
-    //   die($contact_error_phone);
-    // }
+    if(!$phone){
+      die($contact_error_phone);
+    }
 
     if(strlen($subject)<3){
       die($contact_error_subject);
@@ -79,8 +79,9 @@
 
     $message_content = '<strong>' . $name_title . '</strong> ' . $name . '<br>';
     $message_content .= '<strong>' . $email_title . '</strong> ' . $email . '<br>';
-    // //added phone
-    // $message_content .= '<strong>' . $phone_title . '</strong> ' . $phone . '<br>';
+    //added phone
+    $message_content .= '<strong>' . $phone_title . '</strong> ' . $phone . '<br>';
+    $message_content .= "Hi Susan.<br>";
     $message_content .= '<strong>' . $message_title . '</strong> ' . nl2br($message);
 
     $sendemail = mail($contact_email_to, $subject_title . ' ' . $subject, $message_content, $headers);
