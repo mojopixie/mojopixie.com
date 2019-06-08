@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
         var f = $(this).find('.form-group'),
             ferror = false,
             emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
-//            phoneExp = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/i;
+            phoneExp = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/i;
 
         f.children('input').each(function() { // run all inputs
 
@@ -42,11 +42,11 @@ jQuery(document).ready(function($) {
                         }
                         break;
 
-                    // case 'phone':
-                    //     if (!phoneExp.test(i.val())) {
-                    //         ferror = ierror = true;
-                    //     }
-                    //     break;
+                    case 'phone':
+                        if (!phoneExp.test(i.val())) {
+                            ferror = ierror = true;
+                        }
+                        break;
 
                     case 'checked':
                         if (!i.is(':checked')) {
