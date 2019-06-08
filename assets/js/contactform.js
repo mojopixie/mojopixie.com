@@ -43,9 +43,9 @@ jQuery(document).ready(function($) {
                         break;
 
                     case 'phone':
-                        if (!phoneExp.test(i.val())) {
-                            ferror = ierror = true;
-                        }
+                        // if (!phoneExp.test(i.val())) {
+                        //     ferror = ierror = true;
+                        // }
                         break;
 
                     // case 'checked':
