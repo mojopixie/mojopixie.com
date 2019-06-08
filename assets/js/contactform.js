@@ -98,7 +98,6 @@ jQuery(document).ready(function($) {
         else var str = $(this).serialize();
         var action = $(this).attr('action');
         if (!action) {
-            // may need to be action = '../assets/php/contactform.php';
             action = 'assets/php/contactform.php';
         }
         $.ajax({
