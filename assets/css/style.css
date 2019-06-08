@@ -870,15 +870,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* ----------------------------------
 	##contact-form
- ------------------------------------ */
+ ----------------------------7aa0a3-------- */
 
 #contact .form {
     margin-top: 15px;
 }
 
 #contact .form #sendmessage {
-    color: #59898d;
-    border: 1px solid #7aa0a3;
+    background-color: #59898d;
+    border: 1px solid #ededed;
+    color: #474D5D;
     display: none;
     text-align: center;
     padding: 15px;
