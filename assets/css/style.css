@@ -870,7 +870,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* ----------------------------------
 	##contact-form
- ----------------------------7aa0a3-------- */
+ ------------------------------------ */
 
 #contact .form {
     margin-top: 15px;
@@ -878,8 +878,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .form #sendmessage {
     background-color: #59898d;
-    border: 1px solid #ededed;
-    color: #474D5D;
+    border: 1px solid #7aa0a3;
+    color: #fff;
     display: none;
     text-align: center;
     padding: 15px;
