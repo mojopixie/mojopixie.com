@@ -53,9 +53,9 @@
     }
     
     //added phone
-    if(!$phone){
-      die($contact_error_phone);
-    }
+    // if(!$phone){
+    //   die($contact_error_phone);
+    // }
 
     if(strlen($subject)<3){
       die($contact_error_subject);
