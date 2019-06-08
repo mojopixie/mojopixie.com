@@ -81,7 +81,6 @@
     $message_content .= '<strong>' . $email_title . '</strong> ' . $email . '<br>';
     //added phone
     $message_content .= '<strong>' . $phone_title . '</strong> ' . $phone . '<br>';
-    $message_content .= "Hi Susan.<br>";
     $message_content .= '<strong>' . $message_title . '</strong> ' . nl2br($message);
 
     $sendemail = mail($contact_email_to, $subject_title . ' ' . $subject, $message_content, $headers);
