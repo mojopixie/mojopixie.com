@@ -123,35 +123,3 @@ jQuery(document).ready(function($) {
     });
 
 });
-
-
-
-
-
-
-
-
-// $.ajax({
-//     type: "POST",
-//     url: action,
-//     data: str,
-//     success: function(msg) {
-//       if (msg == 'OK') {
-//         msg = 'success';
-//         $("#sendmessage").addClass("show");
-//         /* showing the message */
-//         $("#errormessage").addClass("show");
-//         $('#errormessage').html(msg);
-//         $('.contactForm').find("input, textarea").val("");
-//       } else {
-//         msg = 'failed';
-//         $("#sendmessage").removeClass("show");
-//         $("#errormessage").addClass("show");
-//         $('#errormessage').html(msg);
-//       }
-
-//     }
-//   });
-//   return false;
-// });
-// });
