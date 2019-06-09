@@ -40,6 +40,7 @@ jQuery(document).ready(function($) {
                         if (!phoneExp.test(i.val())) {
                             ferror = ierror = true;
                         }
+                        console.log("JS error for phoneEXP");
                         break;
 
                     case 'email':
