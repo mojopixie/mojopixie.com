@@ -57,6 +57,7 @@ body {
     top: 50%;
     /* centers the loading animation vertically one the screen */
     background-image: url(https://gph.to/2XCNhGe);
+    /*Credit: https://sarafarnsworth.tumblr.com/post/109181553917 */
     /* path to your loading animation */
     background-repeat: no-repeat;
     background-position: center;
@@ -481,7 +482,7 @@ a:hover {
     color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 61.9em) {
     #mobile-nav-toggle {
         display: inline;
     }
