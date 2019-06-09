@@ -52,12 +52,16 @@
 </head>
 
 <body>
-
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
 
     <!-- ================================ Page Content ================================ -->
 
 
     <!-- ================================ #hero ======================================= -->
+
     <section class="hero">
         <div class="container text-center">
             <div class="row">
@@ -580,6 +584,26 @@
     <!-- ================================ Custom Javascript File ======================= -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/contactform.js"></script>
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            //Preloader
+            $(window).on("load", function() {
+                preloaderFadeOutTime = 500;
+
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
+        });
+    </script>
+
 
 </body>
 
