@@ -58,6 +58,15 @@
     if(!$email){
       die($contact_error_email);
     }
+<<<<<<< HEAD
+=======
+    
+    //added phone
+    if(!$phone){
+      print("I'm dying!");
+      die($contact_error_phone);
+    }
+>>>>>>> eb67f035bb876db96cbe8a2d6b78e4c3f8cb4ed9
 
     if(strlen($subject)<3){
       die($contact_error_subject);
