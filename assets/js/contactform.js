@@ -4,9 +4,8 @@ jQuery(document).ready(function($) {
     //Contact
     $('form.contactForm').submit(function() {
         var f = $(this).find('.form-group'),
-        ferror = false,
-        emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
-        phoneExp = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/i;
+            ferror = false,
+            emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
         f.children('input').each(function() { // run all inputs
 
@@ -34,13 +33,6 @@ jQuery(document).ready(function($) {
                         if (i.val().length < parseInt(exp)) {
                             ferror = ierror = true;
                         }
-                        break;
-
-                    case 'phone':
-                        if (!phoneExp.test(i.val())) {
-                            ferror = ierror = true;
-                        }
-                        console.log("JS error for phoneEXP");
                         break;
 
                     case 'email':
@@ -100,7 +92,7 @@ jQuery(document).ready(function($) {
         else var str = $(this).serialize();
         var action = $(this).attr('action');
         if (!action) {
-            action = 'assets/php/contactform.php';
+            action = 'contactform/contactform.php';
         }
         $.ajax({
             type: "POST",
