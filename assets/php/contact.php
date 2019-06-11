@@ -10,17 +10,17 @@ $from = 'susanmbernard@gmail.com';
 $sendTo = 'susanmbernard@gmail.com';
 
 // subject of the email
-$subject = "New message from website's contact form";
+$subject = "&#9889; New message from website's contact form &#9889;";
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array('name' => 'Name', 'email' => 'Email', 'phone' => 'Phone', 'message' => 'Message');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. <br> Thanks! I will contact you soon~';
+$okMessage = '&#10024; Message sent! &#10024; <br> Thanks! I will contact you soon.';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. <br> Please try again later';
+$errorMessage = '&#10060; There was an error while submitting the form. <br> Please try again later';
 
 // ReCaptch Secret
 $recaptchaSecret = '6Ld-K6gUAAAAAPiWDZi0ESgOKA0wcr3wprOSW7b5';
@@ -54,7 +54,7 @@ try {
         
         // everything went well, we can compose the message, as usually
         
-        $emailText = "You have a new message from your contact form\n=============================\n";
+        $emailText = "&#11088; Contact Form Message (mojopipixie.com) &#11088;\n=================================================\n";
 
         foreach ($_POST as $key => $value) {
             // If the field exists in the $fields array, include it in the email
