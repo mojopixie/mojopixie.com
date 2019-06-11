@@ -478,53 +478,63 @@
 
                 <div class="col-lg-5 col-md-8">
                     <p>&#10056; All fields required</p>
-                    <div class="form">
+
+
+                    <!-- <div class="form">
                         <div id="sendmessage">Your message has been sent. <br>Thank you; I will contact you soon!</div>
-                        <div id="errormessage"></div>
-                        <form action="" method="post" role="form" class="contactForm" id="contactForm">
+                        <div id="errormessage"></div> -->
+
+                    <form id="contact-form" method="post" action="assets/php/contact.php" role="form" class="contact-form">
+                        <!--  original--<form id="contactForm" method="post" role="form" class="contactForm" action=""> -->
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+
                             <div class="form-group">
-                                <label for="name" class="sr-only"></label>
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:2" data-msg="&#9760; Please enter at least 2 characters" />
-                                <div class="validation"></div>
+                                <label for="form_name" class="sr-only">Name</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Your Name" required="required" data-error="&#9760; Please enter at least 2 characters">
+                                <div class="help-block with-errors"></div>
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="email" class="sr-only"></label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="&#9760; Please enter a valid email address" />
-                                <div class="validation"></div>
-                            </div>
-                            <!-- 
-                            <div class="form-group">
-                                <label for="phone" class="sr-only"></label>
-                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="phone" data-msg="&#9760; Please enter a valid phone number" />
-                                <div class="validation"></div>
-                            </div> -->
+                        <div class="form-group">
+                            <label for="form_email" class="sr-only"></label>
+                            <input id="form_email" type="email" class="form-control" name="email" placeholder="Your Email" data-rule="email" data-error="&#9760; Please enter a valid email address" />
+                            <div class="validation"></div>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="subject" class="sr-only"></label>
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="&#9760; Please enter subject of at least 8 characters" />
-                                <div class="validation"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message" class="sr-only"></label>
-                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="&#9760; Please include a message" placeholder="Message"></textarea>
-                                <div class="validation"></div>
-                            </div>
-
-                            <!-- <div class="form-group">
-                                <input type="checkbox" id="Consent" name="Consent" value="given">&emsp;I agree to be contacted
-                            </div>
-
-                            <div class="form-group">
-                                <div class="g-recaptcha" style="margin: 2%" data-sitekey=""></div>
-                            </div> -->
+                        <div class="form-group">
+                            <label for="form_phone" class="sr-only">Phone</label>
+                            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Enter Phone" required="required" data-error="&#9760; Please enter a valid phone number">
+                            <div class="help-block with-errors "></div>
+                        </div>
 
 
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-full">Send Message</button></div>
-                        </form>
-                    </div>
+                        <!-- <div class="form-group">
+                            <label for="subject" class="sr-only"></label>
+                            <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" data-rule="minlen:4" data-error="&#9760; Please enter subject of at least 8 characters" />
+                            <div class="validation "></div>
+                        </div> -->
+
+                        <div class="form-group">
+                            <label for="form_message" class="sr-only">Message</label>
+                            <textarea id="form_message" name="message" class="form-control" rows="5" data-rule="required" data-error="&#9760; Please include a message" placeholder="Message"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LdfKqgUAAAAAGSyOIlIsLsuJre2COGJ9Iayye5Q" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                            <input class="form-control d-none" data-recaptcha="true" required data-error="Captcha required">
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+                        <div class="text-center ">
+                            <button type="submit " class="btn btn-full float-left">Send Message</button>
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
@@ -532,24 +542,24 @@
     <!-- ================================ end of contact section ====================== -->
 
     <!-- ================================ footer =© =================================== -->
-    <footer class="site-footer">
-        <div class="bottom">
-            <div class="container">
-                <div class="row">
+    <footer class="site-footer ">
+        <div class="bottom ">
+            <div class="container ">
+                <div class="row ">
 
-                    <div class="col-lg-6 col-xs-12 text-lg-left text-center">
-                        <p class="copyright-text">SmB 2019</p>
-                        <!-- <a class="navbar-brand" href="https://mojopixie.com" alt="mojopixie Innovations">mojopixieInnovations</a> -->
+                    <div class="col-lg-6 col-xs-12 text-lg-left text-center ">
+                        <p class="copyright-text ">SmB 2019</p>
+                        <!-- <a class="navbar-brand " href="https://mojopixie.com " alt="mojopixie Innovations ">mojopixieInnovations</a> -->
                     </div>
 
-                    <div class="col-lg-6 col-xs-12 text-lg-right text-center">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="index.html">Home</a></li>
-                            <li class="list-inline-item"><a href="#about">About</a></li>
-                            <li class="list-inline-item"><a href="#education">Education</a></li>
-                            <li class="list-inline-item"><a href="#skills">Skills</a></li>
-                            <li class="list-inline-item"><a href="#portfolio">Portfolio</a></li>
-                            <li class="list-inline-item"><a href="#contact">Contact</a></li>
+                    <div class="col-lg-6 col-xs-12 text-lg-right text-center ">
+                        <ul class="list-inline ">
+                            <li class="list-inline-item "><a href="index.html ">Home</a></li>
+                            <li class="list-inline-item "><a href="#about ">About</a></li>
+                            <li class="list-inline-item "><a href="#education ">Education</a></li>
+                            <li class="list-inline-item "><a href="#skills ">Skills</a></li>
+                            <li class="list-inline-item "><a href="#portfolio ">Portfolio</a></li>
+                            <li class="list-inline-item "><a href="#contact ">Contact</a></li>
                         </ul>
                     </div>
 
@@ -561,29 +571,42 @@
 
 
     <!-- ================================ scrolltop =================================== -->
-    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+    <a class="scrolltop " href="# "><span class="fa fa-angle-up "></span></a>
 
     <!-- ================================ Required JavaScript Libraries =============== -->
-    <script src="assets/lib/jquery/jquery.min.js"></script>
-    <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
-    <script src="assets/lib/superfish/hoverIntent.js"></script>
-    <script src="assets/lib/superfish/superfish.min.js"></script>
-    <script src="assets/lib/tether/js/tether.min.js"></script>
-    <script src="assets/lib/stellar/stellar.min.js"></script>
-    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/lib/counterup/counterup.min.js"></script>
-    <script src="assets/lib/waypoints/waypoints.min.js"></script>
-    <script src="assets/lib/easing/easing.js"></script>
-    <script src="assets/lib/stickyjs/sticky.js"></script>
-    <script src="assets/lib/parallax/parallax.js"></script>
-    <script src="assets/lib/lockfixed/lockfixed.min.js"></script>
+    <script src="assets/lib/jquery/jquery.min.js "></script>
+    <script src="assets/lib/jquery/jquery-migrate.min.js "></script>
+    <script src="assets/lib/superfish/hoverIntent.js "></script>
+    <script src="assets/lib/superfish/superfish.min.js "></script>
+    <script src="assets/lib/tether/js/tether.min.js "></script>
+    <script src="assets/lib/stellar/stellar.min.js "></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/lib/counterup/counterup.min.js "></script>
+    <script src="assets/lib/waypoints/waypoints.min.js "></script>
+    <script src="assets/lib/easing/easing.js "></script>
+    <script src="assets/lib/stickyjs/sticky.js "></script>
+    <script src="assets/lib/parallax/parallax.js "></script>
+    <script src="assets/lib/lockfixed/lockfixed.min.js "></script>
 
-    <!-- ================================ owl.carousel.js ============================== -->
-    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- ================================ Custom Javascript File ====================== -->
+    <script src="assets/js/custom.js "></script>
+    <!-- <script src="assets/js/contactform.js "></script> -->
 
-    <!-- ================================ Custom Javascript File ======================= -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/contactform.js"></script>
+    <!-- ================================ Contact Form ================================ -->
+    <script src="assets/js/contact.js"></script>
+    <script src="assets/js/validator.js "></script>
+
+    <!-- ================================ owl.carousel.js ============================= -->
+    <script src="assets/js/owl.carousel.min.js "></script>
+
+    <!-- ================================ Google Recaptcha ============================ -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+
+
+
+
 
 
 
@@ -592,7 +615,7 @@
     <script>
         $(document).ready(function() {
             //Preloader
-            $(window).on("load", function() {
+            $(window).on("load ", function() {
                 preloaderFadeOutTime = 500;
 
                 function hidePreloader() {
