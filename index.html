@@ -531,7 +531,8 @@
                         </div>
 
                         <div class="text-center ">
-                            <button type="submit " class="btn btn-full float-left">Send Message</button>
+                            <input type="submit" class="submitMsg float-left" value="Send Message">
+                            <!-- <button type="submit " class="btn btn-full float-left">Send Message</button> -->
                         </div>
 
                     </form>
@@ -612,20 +613,6 @@
 
 
 
-    <script>
-        $(document).ready(function() {
-            //Preloader
-            $(window).on("load ", function() {
-                preloaderFadeOutTime = 500;
-
-                function hidePreloader() {
-                    var preloader = $('.spinner-wrapper');
-                    preloader.fadeOut(preloaderFadeOutTime);
-                }
-                hidePreloader();
-            });
-        });
-    </script>
 
 
 </body>
