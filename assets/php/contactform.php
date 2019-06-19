@@ -1,79 +1,91 @@
 <?php
-/*
-  PHP contact form script
-  Version: 1.1  
-*/
+// require ReCaptcha class
+require('/home/mojopixie/mojopixie.com/assets/recaptcha/recaptcha-master/src/autoload.php');
+// require('/home/finetechnology/fineonline.com/assets/recaptcha/recaptcha-master/src/autoload.php');
 
-/***************** Configuration *****************/
 
-  // Replace with your real receiving email address
-  $contact_email_to = "susanmbernard@gmail.com";
+// configure
+// an email address that will be in the From field of the email.
+$from = 'susanmbernard@gmail.com';
 
-  // Title prefixes
-  $subject_title = "New Message Received from mojopixie.com Contact Form:";
-  $name_title = "Name:";
-  $email_title = "Email:";
-  $message_title = "Message:";
+// an email address that will receive the email with the output of the form
+$sendTo = 'susanmbernard@gmail.com';
 
-  // Error messages
-  $contact_error_name = "Name is too short or empty!";
-  $contact_error_email = "Please enter a valid email!";
-  $contact_error_subject = "Subject is too short or empty!";
-  $contact_error_message = "Message is too short or empty! Please enter something.";
+// subject of the email
+$subject = "&#9889; New message from website's contact form &#9889;";
 
-/********** Do not edit from the below line ***********/
+// form field names and their translations.
+// array variable name => Text to appear in the email
+$fields = array('name' => 'Name', 'email' => 'Email', 'phone' => 'Phone', 'message' => 'Message');
 
-  if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
-    die('Sorry Request must be Ajax POST');
-  }
+// message that will be displayed when everything is OK :)
+$okMessage = '&#10024; Message sent! &#10024; <br> Thanks! I will contact you soon.';
 
-  if(isset($_POST)) {
+// If something goes wrong, we will display this message.
+$errorMessage = '&#10060; There was an error while submitting the form. <br> Please try again later';
 
-    $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
-    $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-    $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-    $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+// ReCaptcha Secret
+$recaptchaSecret = 'ENTER_GOOGLE_RECAPTCHA_SECRET_KEY';
 
-    if(!$contact_email_to || $contact_email_to == 'contact@example.com') {
-      die('The contact form receiving email address is not configured!');
+// let's do the sending
+
+// if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
+error_reporting(E_ALL & ~E_NOTICE);
+
+try {
+    if (!empty($_POST)) {
+
+        // validate the ReCaptcha, if something is wrong, we throw an Exception,
+        // i.e. code stops executing and goes to catch() block
+        
+        if (!isset($_POST['g-recaptcha-response'])) {
+            throw new \Exception('ReCaptcha is not set.');
+        }
+
+        // do not forget to enter your secret key from https://www.google.com/recaptcha/admin
+        
+        $recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret, new \ReCaptcha\RequestMethod\CurlPost());
+        
+        // we validate the ReCaptcha field together with the user's IP address
+        
+        $response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
+
+        if (!$response->isSuccess()) {
+            throw new \Exception('ReCaptcha was not validated.');
+        }
+        
+        // everything went well, we can compose the message, as usually        
+        $emailText = "&#11088; Contact Form Message (mojopipixie.com) &#11088;\n=================================================\n";
+
+        foreach ($_POST as $key => $value) {
+            // If the field exists in the $fields array, include it in the email
+            if (isset($fields[$key])) {
+                $emailText .= "$fields[$key]: $value\n";
+            }
+        }
+    
+        // All the neccessary headers for the email.
+        $headers = array('Content-Type: text/plain; charset="UTF-8";',
+            'From: ' . $from,
+            'Reply-To: ' . $from,
+            'Return-Path: ' . $from,
+        );
+        
+        // Send email
+        mail($sendTo, $subject, $emailText, implode("\n", $headers));
+
+        $responseArray = array('type' => 'success', 'message' => $okMessage);
     }
+} catch (\Exception $e) {
+    $responseArray = array('type' => 'danger', 'message' => $e->getMessage());
+}
 
-    if(strlen($name)<3){
-      die($contact_error_name);
-    }
+if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+    $encoded = json_encode($responseArray);
 
-    if(!$email){
-      die($contact_error_email);
-    }
+    header('Content-Type: application/json');
 
-    if(strlen($subject)<3){
-      die($contact_error_subject);
-    }
-
-    if(strlen($message)<3){
-      die($contact_error_message);
-    }
-
-    if(!isset($contact_email_from)) {
-      $contact_email_from = "contactform@" . @preg_replace('/^www\./','', $_SERVER['SERVER_NAME']);
-    }
-
-    $headers = 'From: ' . $name . ' <' . $contact_email_from . '>' . PHP_EOL;
-    $headers .= 'Reply-To: ' . $email . PHP_EOL;
-    $headers .= 'MIME-Version: 1.0' . PHP_EOL;
-    $headers .= 'Content-Type: text/html; charset=UTF-8' . PHP_EOL;
-    $headers .= 'X-Mailer: PHP/' . phpversion();
-
-    $message_content = '<strong>' . $name_title . '</strong> ' . $name . '<br>';
-    $message_content .= '<strong>' . $email_title . '</strong> ' . $email . '<br>';
-    $message_content .= '<strong>' . $message_title . '</strong> ' . nl2br($message);
-
-    $sendemail = mail($contact_email_to, $subject_title . ' ' . $subject, $message_content, $headers);
-
-    if( $sendemail ) {
-      echo 'OK';
-    } else {
-      echo 'Could not send message! Please check your PHP mail configuration.';
-    }
-  }
-?>
+    echo $encoded;
+} else {
+    echo $responseArray['message'];
+}
