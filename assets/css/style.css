@@ -410,7 +410,8 @@ a:hover {
 	##navbar-brand
 --------------------------------------*/
 
-.navbar-brand {
+.navbar-brand,
+.navbar-branda {
     font-family: 'Dr Sugiyama', cursive;
     color: #BDCFCF;
     display: inline-block;
@@ -432,6 +433,11 @@ a:hover {
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+}
+
+.navbar-branda:focus,
+.navbar-branda:hover {
+    color: #59898d;
 }
 
 
