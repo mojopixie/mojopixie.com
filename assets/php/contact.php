@@ -1,6 +1,8 @@
 <?php
 // require ReCaptcha class
 require('/home/mojopixie/mojopixie.com/assets/recaptcha/recaptcha-master/src/autoload.php');
+// require('/home/finetechnology/fineonline.com/assets/recaptcha/recaptcha-master/src/autoload.php');
+
 
 // configure
 // an email address that will be in the From field of the email.
@@ -22,7 +24,7 @@ $okMessage = '&#10024; Message sent! &#10024; <br> Thanks! I will contact you so
 // If something goes wrong, we will display this message.
 $errorMessage = '&#10060; There was an error while submitting the form. <br> Please try again later';
 
-// ReCaptch Secret
+// ReCaptcha Secret
 $recaptchaSecret = '6Ld-K6gUAAAAAPiWDZi0ESgOKA0wcr3wprOSW7b5';
 
 // let's do the sending
@@ -52,8 +54,7 @@ try {
             throw new \Exception('ReCaptcha was not validated.');
         }
         
-        // everything went well, we can compose the message, as usually
-        
+        // everything went well, we can compose the message, as usually        
         $emailText = "&#11088; Contact Form Message (mojopipixie.com) &#11088;\n=================================================\n";
 
         foreach ($_POST as $key => $value) {
