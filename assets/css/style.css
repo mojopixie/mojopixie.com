@@ -640,6 +640,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .education .card h4 {
     color: #fff;
     text-transform: uppercase;
+    margin-top: 2rem;
 }
 
 .education .card p {
@@ -1147,6 +1148,7 @@ label {
         align-content: center;
         width: 350px;
         height: 280px;
+        margin-left: 30px;
     }
     .nav-menu a {
         font-size: 12px;
@@ -1158,6 +1160,7 @@ label {
         align-content: center;
         width: 200px;
         height: 160px;
+        margin-left: 70px;
     }
 }
 
