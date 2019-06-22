@@ -1,7 +1,6 @@
 <?php
 // require ReCaptcha class
-require('/home/mojopixie/mojopixie.com/assets/recaptcha/recaptcha-master/src/autoload.php');
-// require('/home/finetechnology/fineonline.com/assets/recaptcha/recaptcha-master/src/autoload.php');
+
 
 
 // configure
